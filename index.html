@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="Css/Portfolio.css" />
-    <!-- Add Font Awesome CDN in <head> if not already present -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -20,7 +19,6 @@
     <link rel="manifest" href="manifest.json" />
   </head>
   <body>
-    <!-- Section navigation bar (now includes Section 1) -->
     <nav id="section-navbar" class="section-navbar">
       <a href="#section-1">Perfil</a>
       <a href="#section-2">Proyectos</a>
@@ -166,6 +164,17 @@
       </section>
     </main>
 
+    <!-- Image Modal -->
+    <div id="image-modal" class="image-modal" style="display: none">
+      <span class="image-modal-close" id="image-modal-close">&times;</span>
+      <img
+        class="image-modal-content"
+        id="image-modal-img"
+        src=""
+        alt="Imagen ampliada"
+      />
+    </div>
+
     <script>
       // Dark mode toggle script
       const btn = document.getElementById("darkModeToggle");
@@ -185,8 +194,6 @@
           const href = this.getAttribute("href");
           const target = document.querySelector(href);
           if (!target) return;
-
-          // For Section 3, scroll 50px above the heading
           if (href === "#section-3") {
             const heading = document.querySelector("#section-3 h2");
             const targetTop =
@@ -218,7 +225,6 @@
       document
         .getElementById("scroll-to-section-3")
         .addEventListener("click", function () {
-          // Scroll to the heading of section 3 with 50px offset
           const heading = document.querySelector("#section-3 h2");
           const targetTop =
             heading.getBoundingClientRect().top + window.pageYOffset - 50;
@@ -253,6 +259,27 @@
       window.addEventListener("scroll", checkNavbarVisibility);
       window.addEventListener("resize", checkNavbarVisibility);
       document.addEventListener("DOMContentLoaded", checkNavbarVisibility);
+
+      // Modal for image gallery section 2
+      document.querySelectorAll(".section-2-collage img").forEach((img) => {
+        img.addEventListener("click", function () {
+          const modal = document.getElementById("image-modal");
+          const modalImg = document.getElementById("image-modal-img");
+          modalImg.src = this.src;
+          modal.style.display = "flex";
+          document.body.style.overflow = "hidden";
+        });
+      });
+      document.getElementById("image-modal-close").onclick = function () {
+        document.getElementById("image-modal").style.display = "none";
+        document.body.style.overflow = "";
+      };
+      document.getElementById("image-modal").onclick = function (e) {
+        if (e.target === this) {
+          this.style.display = "none";
+          document.body.style.overflow = "";
+        }
+      };
     </script>
   </body>
 </html>
