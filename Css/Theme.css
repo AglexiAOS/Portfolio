@@ -1,0 +1,96 @@
+/* ===== Theme Variables ===== */
+:root {
+  --primary-bg: #f5f5f5;
+  --primary-text: #222;
+  --accent: #ffe066;
+  --accent-dark: #bfa900;
+  --box-bg: #fff;
+  --box-radius: 18px;
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  --sidebar-bg: #ffe066;
+  --sidebar-text: #222;
+  --navbar-bg: #fff;
+  --navbar-text: #222;
+  --navbar-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+}
+
+/* ===== Dark Mode Variables ===== */
+body.manual-dark {
+  --primary-bg: #181818;
+  --primary-text: #f5f5f5;
+  --accent: #ffe066;
+  --accent-dark: #bfa900;
+  --box-bg: #232323;
+  --box-radius: 18px;
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+  --sidebar-bg: #bfa900;
+  --sidebar-text: #232323;
+  --navbar-bg: #232323;
+  --navbar-text: #ffe066;
+  --navbar-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== General Theme ===== */
+body {
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: "Roboto Mono", "Savate", Arial, sans-serif;
+}
+
+.main-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-text);
+}
+
+.section-rect,
+.main-rect,
+.section-2 {
+  background: var(--box-bg);
+  color: var(--primary-text);
+  border-radius: var(--box-radius);
+  box-shadow: var(--shadow);
+}
+
+.sidebar {
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+}
+
+.section-navbar {
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+  box-shadow: var(--navbar-shadow);
+}
+
+.section-navbar a {
+  color: var(--navbar-text);
+}
+
+.section-navbar a:hover {
+  background: var(--accent);
+  color: var(--primary-text);
+}
+
+.dark-mode-toggle {
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+}
+
+.section-3-images img,
+.section-2-collage img,
+.photo-placeholder img {
+  background: var(--box-bg);
+  color: var(--primary-text);
+}
+
+/* Accent color for icons and highlights */
+.contact-info i,
+.section-navbar a::after {
+  color: var(--accent);
+  background: var(--accent);
+}

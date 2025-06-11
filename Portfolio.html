@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="Assets/Icons/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Savate:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Css/Portfolio.css" />
+    <!-- Add Font Awesome CDN in <head> if not already present -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <!-- Section navigation bar (now includes Section 1) -->
+    <nav id="section-navbar" class="section-navbar">
+      <a href="#section-1">Perfil</a>
+      <a href="#section-2">Proyectos</a>
+      <a href="#section-3">Programas</a>
+      <a href="#section-4">Contacto</a>
+      <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+    </nav>
+
+    <main>
+      <!-- Section 1 -->
+      <h1 class="main-title" id="section-1">Lexi Portfolio</h1>
+      <div class="portfolio-layout">
+        <div class="sidebar">
+          <div class="small-rect">
+            <div class="small-img-placeholder">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="small-text-placeholder">Perfil</div>
+          </div>
+          <div class="small-rect" id="scroll-to-section-2">
+            <div class="small-img-placeholder">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="small-text-placeholder">Proyectos</div>
+          </div>
+          <div class="small-rect" id="scroll-to-section-3">
+            <div class="small-img-placeholder">
+              <i class="fa-solid fa-person"></i>
+            </div>
+            <div class="small-text-placeholder">Programas</div>
+          </div>
+          <div class="small-rect" id="scroll-to-section-4">
+            <div class="small-img-placeholder">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="small-text-placeholder">Contacto</div>
+          </div>
+        </div>
+        <div class="main-rect">
+          <div class="photo-placeholder">
+            <img src="Assets/Images/Cart.webp" />
+          </div>
+          <div class="info">
+            <h2>Antini Wang</h2>
+            <p>Estudiante de Diseño Gráfico y Fotografía en UDIT Madrid</p>
+            <p>
+              Bienvenido a mi porfolio, un espacio donde convergen mi pasión por
+              la estética visual, la narrativa visual y la experimentación
+              creativa. A través del diseño gráfico y la fotografía, busco
+              comunicar ideas con impacto, conectar emociones y construir
+              identidades visuales que hablen por sí solas. Cada proyecto que
+              presento aquí representa un paso en mi camino de aprendizaje,
+              exploración y crecimiento como creador visual. Mi formación en
+              UDIT me ha permitido desarrollar un enfoque conceptual sólido y
+              una sensibilidad artística que combina técnica, funcionalidad y
+              expresión personal. Gracias por tomarte el tiempo de conocer mi
+              trabajo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <section class="section-2" id="section-2">
+        <h2 style="font-size: 4em">Proyectos</h2>
+
+        <div class="section-2-collage">
+          <img src="Assets/Images/1.jpg" alt="trabajo" />
+          <img src="Assets/Images/2.jpg" alt="trabajo" />
+          <img src="Assets/Images/3.jpg" alt="trabajo" />
+          <img src="Assets/Images/4.jpg" alt="trabajo" />
+          <img src="Assets/Images/5.jpg" alt="trabajo" />
+          <img src="Assets/Images/6.jpg" alt="trabajo" />
+          <img src="Assets/Images/7.jpg" alt="trabajo" />
+          <img src="Assets/Images/9.jpg" alt="trabajo" />
+          <img src="Assets/Images/10.jpg" alt="trabajo" />
+          <img src="Assets/Images/12.png" alt="trabajo" />
+          <img src="Assets/Images/13.png" alt="trabajo" />
+          <img src="Assets/Images/15.png" alt="trabajo" />
+          <img src="Assets/Images/14.png" alt="trabajo" />
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section-3" id="section-3">
+        <div class="section-rect">
+          <h2 style="font-size: 4em">Programas</h2>
+
+          <p>
+            Manejo con soltura herramientas clave como Illustrator y Photoshop,
+            que utilizo para diseño gráfico, ilustración y retoque digital. Con
+            Premiere Pro edito vídeos sencillos, presentaciones y reels
+            creativos. En Lightroom, trabajo la edición fotográfica y la
+            coherencia visual de mis series. InDesign me permite maquetar
+            proyectos editoriales de forma profesional, y estoy en proceso de
+            aprendizaje con Blender, explorando el modelado y la integración de
+            3D en mis piezas visuales.
+          </p>
+          <div class="section-3-images">
+            <img src="Assets/Images/pr.png" alt="Image 1" />
+            <img src="Assets/Images/ps.png" alt="Image 2" />
+            <img src="Assets/Images/ai.png" alt="Image 3" />
+            <img src="Assets/Images/id.png" alt="Image 4" />
+            <img src="Assets/Images/blender.png" alt="Image 5" />
+            <img src="Assets/Images/lr.png" alt="Image 6" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section-4" id="section-4">
+        <div class="section-rect">
+          <h2>Contacto</h2>
+          <p>
+            Puedes contactarme a través del siguiente formulario o por correo
+            electrónico.
+          </p>
+          <form
+            class="contact-form"
+            action="mailto:tuemail@ejemplo.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> AntiniWang@lexi.com</p>
+            <p><i class="fa-brands fa-instagram"></i> @AntiniWang</p>
+            <p>
+              <i class="fa-brands fa-linkedin"></i> linkedin.com/in/AntiniWang
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Dark mode toggle script
+      const btn = document.getElementById("darkModeToggle");
+      btn.addEventListener("click", () => {
+        document.body.classList.toggle("manual-dark");
+        btn.textContent = document.body.classList.contains("manual-dark")
+          ? "☀️"
+          : "🌙";
+        btn.classList.add("rotate");
+        setTimeout(() => btn.classList.remove("rotate"), 2000);
+      });
+
+      // Smooth scroll for all navbar links (including Section 1-4)
+      document.querySelectorAll(".section-navbar a").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const href = this.getAttribute("href");
+          const target = document.querySelector(href);
+          if (!target) return;
+
+          // For Section 3, scroll 50px above the heading
+          if (href === "#section-3") {
+            const heading = document.querySelector("#section-3 h2");
+            const targetTop =
+              heading.getBoundingClientRect().top + window.pageYOffset - 50;
+            window.scrollTo({ top: targetTop, behavior: "smooth" });
+          } else if (href === "#section-1") {
+            const navbar = document.getElementById("section-navbar");
+            const navbarHeight = navbar ? navbar.offsetHeight : 0;
+            const targetTop =
+              target.getBoundingClientRect().top +
+              window.pageYOffset -
+              navbarHeight -
+              16;
+            window.scrollTo({ top: targetTop, behavior: "smooth" });
+          } else {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      // Enable smooth scroll for sidebar small-rect buttons
+      document
+        .getElementById("scroll-to-section-2")
+        .addEventListener("click", function () {
+          document
+            .getElementById("section-2")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      document
+        .getElementById("scroll-to-section-3")
+        .addEventListener("click", function () {
+          // Scroll to the heading of section 3 with 50px offset
+          const heading = document.querySelector("#section-3 h2");
+          const targetTop =
+            heading.getBoundingClientRect().top + window.pageYOffset - 50;
+          window.scrollTo({ top: targetTop, behavior: "smooth" });
+        });
+      document
+        .getElementById("scroll-to-section-4")
+        .addEventListener("click", function () {
+          document
+            .getElementById("section-4")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+
+      // Show/hide navbar based on scroll position
+      const navbar = document.getElementById("section-navbar");
+      const section2 = document.getElementById("section-2");
+      const section3 = document.getElementById("section-3");
+      const section4 = document.getElementById("section-4");
+
+      function checkNavbarVisibility() {
+        const scrollY = window.scrollY || window.pageYOffset;
+        const section2Top = section2.offsetTop - 80;
+        const section4Bottom = section4.offsetTop + section4.offsetHeight;
+
+        if (scrollY >= section2Top && scrollY < section4Bottom) {
+          navbar.classList.add("visible");
+        } else {
+          navbar.classList.remove("visible");
+        }
+      }
+
+      window.addEventListener("scroll", checkNavbarVisibility);
+      window.addEventListener("resize", checkNavbarVisibility);
+      document.addEventListener("DOMContentLoaded", checkNavbarVisibility);
+    </script>
+  </body>
+</html>
