@@ -1,4 +1,4 @@
-/* ===== Theme Variables ===== */
+/* ===== Variables Theme ===== */
 :root {
   --primary-bg: #f5f5f5;
   --primary-text: #222;
@@ -14,7 +14,7 @@
   --navbar-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
 }
 
-/* ===== Dark Mode Variables ===== */
+/* ===== Variables del dark mode ===== */
 body.manual-dark {
   --primary-bg: #181818;
   --primary-text: #f5f5f5;
@@ -30,7 +30,7 @@ body.manual-dark {
   --navbar-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* ===== General Theme ===== */
+/* ===== Tema general ===== */
 body {
   background: var(--primary-bg);
   color: var(--primary-text);

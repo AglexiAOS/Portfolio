@@ -2,9 +2,6 @@ body {
   font-family: "Roboto Mono", "Savate", Arial, sans-serif;
   margin: 0;
   background: #f5f5f5;
-  background-image: url("Assets/Images/pattern.jpg");
-  background-repeat: repeat;
-  background-size: auto;
 }
 
 header,
@@ -15,7 +12,6 @@ footer {
   text-align: center;
 }
 
-/* --- Section 1 Layout --- */
 .portfolio-layout {
   display: flex;
   flex-direction: row;
@@ -66,7 +62,6 @@ footer {
   margin-top: 80px;
 }
 
-/* --- Responsive Styles --- */
 @media (max-width: 900px) {
   .main-title {
     font-size: 2rem;
@@ -141,7 +136,6 @@ footer {
   }
 }
 
-/* --- Sidebar Rectangles --- */
 .small-rect {
   width: 150px;
   height: 103px;
@@ -198,7 +192,6 @@ footer {
   box-shadow: none;
 }
 
-/* --- Main Rectangle (Section 1) --- */
 .main-rect {
   background: #fff;
   border-radius: 8px;
@@ -238,7 +231,6 @@ footer {
   justify-content: flex-start;
 }
 
-/* --- Section 2 Masonry Collage --- */
 .section-2 {
   margin: 120px auto 0 auto;
   max-width: 1200px;
@@ -283,7 +275,6 @@ footer {
   z-index: 2;
 }
 
-/* --- Section 3 & 4 Rectangle --- */
 .section-rect {
   width: 100%;
   max-width: 1200px;
@@ -300,7 +291,6 @@ footer {
   position: relative;
 }
 
-/* Optional: Make the section heading inside .section-rect left-aligned with margin */
 .section-rect > h2,
 .section-rect > .section-title {
   text-align: left;
@@ -310,7 +300,6 @@ footer {
   font-family: "Roboto Mono", "Savate", Arial, sans-serif;
 }
 
-/* --- Section Navigation Bar --- */
 .section-navbar {
   position: fixed;
   top: 0;
@@ -350,7 +339,6 @@ footer {
   right: auto;
 }
 
-/* Make nav links animate underline on hover for smooth effect */
 .section-navbar a {
   color: #222;
   text-decoration: none;
@@ -385,7 +373,6 @@ footer {
   color: #222;
 }
 
-/* --- Dark Mode Styles --- */
 .dark-mode-toggle {
   position: fixed;
   top: 24px;
@@ -505,7 +492,6 @@ body.manual-dark .section-navbar a:hover {
   background: #fff;
 }
 
-/* Responsive for tablets */
 @media (max-width: 900px) {
   .section-3-images {
     grid-template-columns: repeat(2, 90px);
@@ -521,7 +507,6 @@ body.manual-dark .section-navbar a:hover {
   }
 }
 
-/* Responsive for mobile */
 @media (max-width: 600px) {
   .section-3-images {
     grid-template-columns: 1fr 1fr;
@@ -537,20 +522,17 @@ body.manual-dark .section-navbar a:hover {
   }
 }
 
-/* Add more vertical spacing between sections */
 section {
   margin-top: 80px;
   margin-bottom: 80px;
 }
 
-/* If you want even more space for just Section 3 and Section 4: */
 .section-3,
 .section-4 {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-/* Light mode (default) for all sections */
 .section-rect,
 .section-2,
 .main-rect {
@@ -565,7 +547,6 @@ section {
   color: #222;
 }
 
-/* Dark mode for all sections */
 body.manual-dark .section-rect,
 body.manual-dark .section-2,
 body.manual-dark .main-rect {
@@ -635,7 +616,6 @@ body.manual-dark .rectangulo-small .small-text-placeholder {
   align-self: start;
 }
 
-/* Add to Style.css for contact form styling */
 .contact-form {
   display: flex;
   flex-direction: column;

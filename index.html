@@ -28,7 +28,7 @@
     </nav>
 
     <main>
-      <!-- Section 1 -->
+      <!-- Profile -->
       <h1 class="main-title" id="section-1">Lexi Portfolio</h1>
       <div class="portfolio-layout">
         <div class="sidebar">
@@ -81,7 +81,7 @@
         </div>
       </div>
 
-      <!-- Section 2 -->
+      <!-- Trabajos Imagenes -->
       <section class="section-2" id="section-2">
         <h2 style="font-size: 4em">Proyectos</h2>
 
@@ -102,7 +102,7 @@
         </div>
       </section>
 
-      <!-- Section 3 -->
+      <!-- Herramientas -->
       <section class="section-3" id="section-3">
         <div class="section-rect">
           <h2 style="font-size: 4em">Programas</h2>
@@ -128,7 +128,7 @@
         </div>
       </section>
 
-      <!-- Section 4 -->
+      <!-- Contactos -->
       <section class="section-4" id="section-4">
         <div class="section-rect">
           <h2>Contacto</h2>
@@ -170,13 +170,13 @@
       <img
         class="image-modal-content"
         id="image-modal-img"
-        src=""
+        src="Imagen"
         alt="Imagen ampliada"
       />
     </div>
 
     <script>
-      // Dark mode toggle script
+      // Modo oscuro automatico
       const btn = document.getElementById("darkModeToggle");
       btn.addEventListener("click", () => {
         document.body.classList.toggle("manual-dark");
@@ -187,7 +187,7 @@
         setTimeout(() => btn.classList.remove("rotate"), 2000);
       });
 
-      // Smooth scroll for all navbar links (including Section 1-4)
+      //scroll
       document.querySelectorAll(".section-navbar a").forEach((link) => {
         link.addEventListener("click", function (e) {
           e.preventDefault();
@@ -214,7 +214,7 @@
         });
       });
 
-      // Enable smooth scroll for sidebar small-rect buttons
+      // scroll to sections from sidebar
       document
         .getElementById("scroll-to-section-2")
         .addEventListener("click", function () {
@@ -238,7 +238,7 @@
             .scrollIntoView({ behavior: "smooth" });
         });
 
-      // Show/hide navbar based on scroll position
+      // Esconder barra seccion 1
       const navbar = document.getElementById("section-navbar");
       const section2 = document.getElementById("section-2");
       const section3 = document.getElementById("section-3");
@@ -260,7 +260,7 @@
       window.addEventListener("resize", checkNavbarVisibility);
       document.addEventListener("DOMContentLoaded", checkNavbarVisibility);
 
-      // Modal for image gallery section 2
+      // Modal de imagen trabajos
       document.querySelectorAll(".section-2-collage img").forEach((img) => {
         img.addEventListener("click", function () {
           const modal = document.getElementById("image-modal");
